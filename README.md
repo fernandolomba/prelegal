@@ -1,6 +1,6 @@
 # prelegal
 
-> **Proyecto en desarrollo** — fecha estimada de finalización: 25 de abril de 2026.
+> **Proyecto en desarrollo** — fecha estimada de finalización: 26 de abril de 2026.
 
 ## Estado
 
