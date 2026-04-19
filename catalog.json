@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Mutual Non-Disclosure Agreement",
+    "description": "Standard terms for a mutual NDA allowing both parties to share confidential information for a specific purpose.",
+    "filename": "templates/Mutual-NDA.md"
+  },
+  {
+    "name": "Mutual NDA Cover Page",
+    "description": "Cover page template to be completed and signed alongside the Mutual NDA Standard Terms.",
+    "filename": "templates/Mutual-NDA-coverpage.md"
+  },
+  {
+    "name": "Cloud Service Agreement",
+    "description": "Comprehensive agreement governing the provision of cloud-based software services, including access rights, payment, liability, and confidentiality.",
+    "filename": "templates/CSA.md"
+  },
+  {
+    "name": "Design Partner Agreement",
+    "description": "Agreement for early access to a product in exchange for feedback, allowing the provider to develop and improve the product.",
+    "filename": "templates/design-partner-agreement.md"
+  },
+  {
+    "name": "Service Level Agreement",
+    "description": "Agreement defining uptime targets, response time targets, and service credits for cloud services.",
+    "filename": "templates/sla.md"
+  },
+  {
+    "name": "Professional Services Agreement",
+    "description": "Agreement governing the provision of professional services including deliverables, IP assignment, payment, and confidentiality.",
+    "filename": "templates/psa.md"
+  },
+  {
+    "name": "Data Processing Agreement",
+    "description": "GDPR-compliant agreement governing how a provider processes personal data on behalf of a customer, including SCCs and security incident response.",
+    "filename": "templates/DPA.md"
+  },
+  {
+    "name": "Partnership Agreement",
+    "description": "Standard agreement governing cooperation between two companies, including trademark licensing, payment, and confidentiality.",
+    "filename": "templates/Partnership-Agreement.md"
+  },
+  {
+    "name": "Software License Agreement",
+    "description": "Agreement governing the licensing of on-premise or self-hosted software, including installation rights, updates, and support.",
+    "filename": "templates/Software-License-Agreement.md"
+  },
+  {
+    "name": "Pilot Agreement",
+    "description": "Agreement for providing trial or pilot access to a product for evaluation purposes before entering a long-term agreement.",
+    "filename": "templates/Pilot-Agreement.md"
+  },
+  {
+    "name": "Business Associate Agreement",
+    "description": "HIPAA-compliant agreement governing the handling of protected health information (PHI) by a business associate on behalf of a covered entity.",
+    "filename": "templates/BAA.md"
+  },
+  {
+    "name": "AI Addendum",
+    "description": "Addendum to a cloud service or software agreement governing the use of AI services, model training restrictions, and ownership of AI outputs.",
+    "filename": "templates/AI-Addendum.md"
+  }
+]
