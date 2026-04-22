@@ -1,6 +1,6 @@
 "use client";
 
-import { NDAFormData, generateNDADocument } from "@/lib/nda-template";
+import { NDAFormData } from "@/lib/nda-template";
 
 interface Props {
   data: NDAFormData;
@@ -18,14 +18,7 @@ export default function NDAPreview({ data }: Props) {
       : "In perpetuity.";
 
   const handleDownload = () => {
-    const content = generateNDADocument(data);
-    const blob = new Blob([content], { type: "text/markdown" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "mutual-nda.md";
-    a.click();
-    URL.revokeObjectURL(url);
+    window.print();
   };
 
   return (
@@ -36,7 +29,7 @@ export default function NDAPreview({ data }: Props) {
           onClick={handleDownload}
           className="bg-blue-600 text-white text-sm px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
         >
-          Download .md
+          Download PDF
         </button>
       </div>
 
