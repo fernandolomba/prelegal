@@ -25,15 +25,3 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media print {
-  .no-print {
-    display: none !important;
-  }
-  .print-full {
-    position: fixed;
-    inset: 0;
-    overflow: visible;
-    border: none;
-    padding: 0;
-  }
-}
