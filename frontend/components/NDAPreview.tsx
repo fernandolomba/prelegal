@@ -1,6 +1,8 @@
 "use client";
 
-import { NDAFormData, generateNDADocument } from "@/lib/nda-template";
+import { pdf } from "@react-pdf/renderer";
+import NDAPdfDocument from "./NDAPdfDocument";
+import { NDAFormData } from "@/lib/nda-template";
 
 interface Props {
   data: NDAFormData;
@@ -17,13 +19,12 @@ export default function NDAPreview({ data }: Props) {
       ? `${data.confidentialityTermYears} year(s) from Effective Date, but in the case of trade secrets until Confidential Information is no longer considered a trade secret under applicable laws.`
       : "In perpetuity.";
 
-  const handleDownload = () => {
-    const content = generateNDADocument(data);
-    const blob = new Blob([content], { type: "text/markdown" });
+  const handleDownload = async () => {
+    const blob = await pdf(<NDAPdfDocument data={data} />).toBlob();
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "mutual-nda.md";
+    a.download = "mutual-nda.pdf";
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -36,7 +37,7 @@ export default function NDAPreview({ data }: Props) {
           onClick={handleDownload}
           className="bg-blue-600 text-white text-sm px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
         >
-          Download .md
+          Download PDF
         </button>
       </div>
 
